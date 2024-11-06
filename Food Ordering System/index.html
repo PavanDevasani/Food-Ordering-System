@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Your Favourite item</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="index">
+    
+    <h1>Select Your Favourite item</h1>
+    
+    <form action="order.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="food">Select Food:</label>
+        <select id="food" name="food" required>
+            <option value="">-- Select --</option>
+            <option value="ChickenBiryani">ChickenBiryanii</option>
+            <option value="MuttonBiryani">MuttonBiryani</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Pasta">Pasta</option>
+            <option value="Ice cream">Ice cream</option>
+            <option value="Thick Shakes">Thick Shakes</option>
+        </select>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required>
+
+        <label for="price">Item price:</label>
+
+        <select id="price" name="price" required>
+            <option value="">- -cost- -</option>
+            <option value="300">300</option>
+            </select>
+
+       
+        <input type="submit" value="Place Order">
+    </form>
+    
+    
+</body>
+
+</html>

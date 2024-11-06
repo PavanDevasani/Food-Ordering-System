@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Example</title>
+</head>
+<body>
+  
+  <div id="video-container"></div>
+
+  <script>
+    // Create a video element
+    var video = document.createElement('video');
+    video.src = 'pp.mp4';
+    video.type = 'video/mp4';
+    video.autoplay = true;
+
+    // Append the video element to the container
+    var container = document.getElementById('video-container');
+    container.appendChild(video);
+  </script>
+</body>
+</html>
